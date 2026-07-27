@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganesh B C Portfolio</title>
+  <meta name="description" content="Portfolio of Ganesh B C, a computer science engineer and  3D designer building fast, accessible interfaces.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ganesh B C — Software Engineer & Designer">
+  <meta property="og:description" content="Portfolio of Ganesh B C, a computer science engineer and  3D designer building fast, accessible interfaces.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: self-hosting recommended for production (see README); using
+       font-display: swap so text never blocks on the network. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ===================== SIGNATURE ELEMENT: SCROLL SPINE =================== -->
+  <nav class="spine" aria-label="Section progress">
+    <div class="spine__track"></div>
+    <div class="spine__fill" data-spine-fill></div>
+    <a href="#hero" class="spine__node" data-label="Intro" data-spine-node></a>
+    <a href="#education" class="spine__node" data-label="Education" data-spine-node></a>
+    <a href="#skills" class="spine__node" data-label="Skills" data-spine-node></a>
+    <a href="#work" class="spine__node" data-label="Work" data-spine-node></a>
+    <a href="#contact" class="spine__node" data-label="Contact" data-spine-node></a>
+  </nav>
+
+  <!-- ===================== NAV (glassmorphism) =================== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">PORTFOLIO</a>
+      <ul class="nav__links" role="list">
+        <li><a class="nav__link" href="#education">Education</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#work">Work</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="theme-toggle__thumb"></span>
+        </button>
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== 1. HERO / BIO =================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Computer Science Engineer &amp; Designer</p>
+        <h1 class="hero__title" id="hero-heading">
+          <span class="line" style="--i:0"><!-- PLACEHOLDER: first name --> Ganesh</span>
+          <span class="line" style="--i:1"><!-- PLACEHOLDER: last name -->B C</span>
+        </h1>
+        <p class="hero__lede">
+          <!-- PLACEHOLDER: bio, 40–60 words -->
+          I'm a Computer Science Engineering student passionate about building modern, user-focused digital solutions.
+          With a foundation in web development, cloud computing, cybersecurity, generative AI, and CAD design, I enjoy transforming ideas into practical applications. 
+          I'm committed to continuous learning, solving real-world problems, and creating technology that delivers meaningful impact.
+
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#work">View Work</a>
+          <a class="btn btn--ghost" href="/assets/resume.pdf" download>Download Résumé</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="dash"></span> Scroll
+      </div>
+    </section>
+
+    <!-- ===================== 2. EDUCATION =================== -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">01 — Background</p>
+          <h2 id="education-heading">Education</h2>
+        </div>
+
+        <div class="grid grid--2" data-reveal-group>
+          <article class="card reveal" style="--i:0">
+            <div class="card__meta">
+              <h3><!-- PLACEHOLDER: degree --> B.E. in Computer Science and Engineering</h3>
+              <span class="card__date"><!-- PLACEHOLDER: dates -->2025 – 2029</span>
+            </div>
+            <p class="card__org"><!-- PLACEHOLDER: institution -->Saveetha Engineering College, Chennai</p>
+            <ul class="card__desc" role="list">
+              <li>Student - 2nd Year; GPA 7.3/10.0 <!-- PLACEHOLDER: GPA optional --></li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--i:1">
+            <div class="card__meta">
+              <h3><!-- PLACEHOLDER: certification -->Introduction to Generative AI</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org"><!-- PLACEHOLDER: institution -->Google Cloud</p>
+            <ul class="card__desc" role="list">
+              <li>Focus: Generative AI principles and applications</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="Introduction to Generative AI" data-cert-image="assets/Gen Ai.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--i:2">
+            <div class="card__meta">
+              <h3>AWS Cloud Computing</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Amazon Web Services</p>
+            <ul class="card__desc" role="list">
+              <li>Core cloud concepts, AWS services, and architecture basics.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="AWS Cloud Computing" data-cert-image="assets/aws-educate-introduction-to-cloud-101-training-badge.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+          <article class="card reveal" style="--i:3">
+            <div class="card__meta">
+              <h3>AWS Generative AI</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Amazon Web Services</p>
+            <ul class="card__desc" role="list">
+              <li>Introduction to generative AI on AWS.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="AWS Generative AI" data-cert-image="assets/aws gen ai.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+          <article class="card reveal" style="--i:3">
+            <div class="card__meta">
+              <h3>AWS Machine Learning</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Amazon Web Services</p>
+            <ul class="card__desc" role="list">
+              <li>Introduction to machine learning on AWS.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="AWS Machine Learning" data-cert-image="assets/aws ml.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--i:3">
+            <div class="card__meta">
+              <h3>Introduction to Cybersecurity</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Skillup</p>
+            <ul class="card__desc" role="list">
+              <li>Fundamentals of security, risk management, and safe online practices.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="Introduction to Cybersecurity" data-cert-image="assets/Cyber security.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--i:4">
+            <div class="card__meta">
+              <h3>UI/UX Design Fundamentals</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Google UX Design</p>
+            <ul class="card__desc" role="list">
+              <li>Principles of user-centered design, wireframing, and accessibility.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="UI/UX Design Fundamentals" data-cert-image="assets/Ui and UX.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--i:5">
+            <div class="card__meta">
+              <h3>Fusion 360</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">SourceCAD</p>
+            <ul class="card__desc" role="list">
+              <li>3D modeling, design, and manufacturing using Fusion 360.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="Fusion 360" data-cert-image="assets/Fusion 360.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+          </article>
+          <article class="card reveal" style="--i:6">
+            <div class="card__meta">
+              <h3>Kali Linux</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Skillup</p>
+            <ul class="card__desc" role="list">
+              <li>Introduction to ethical hacking and penetration testing.</li>
+            </ul>
+            <div class="card__actions">
+              <button class="btn btn--ghost" type="button" data-cert-modal-open data-cert-title="Kali Linux" data-cert-image="assets/Kali Linux.png" aria-haspopup="dialog" aria-controls="certificateModal">
+                View Certificate
+              </button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SKILLS =================== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">02 — Toolkit</p>
+          <h2 id="skills-heading">Skills</h2>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="skills__group reveal">
+            <h3>Programming Languages</h3>
+            <div class="skill-row">
+              <span>JavaScript / TypeScript</span>
+              <span class="skill-row__dots" aria-label="Proficient">
+                <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+              </span>
+            </div>
+            <div class="skill-row">
+              <span>Python</span>
+              <span class="skill-row__dots" aria-label="Proficient">
+                <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+              </span>
+            </div>
+            <div class="skill-row">
+              <span>HTML / CSS</span>
+              <span class="skill-row__dots" aria-label="Proficient">
+                <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+              </span>
+            </div>
+            <div class="skill-row">
+              <span>C Programming</span>
+              <span class="skill-row__dots" aria-label="Proficient">
+                <span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span class="is-filled"></span><span></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3>Software &amp; Tools</h3>
+            <div class="tags">
+              <span class="tag">Blender</span>
+              <span class="tag">Fusion 360</span>
+              <span class="tag">Unreal Engine</span>
+            </div>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3>Design</h3>
+            <div class="tags">
+              <span class="tag">Design parts</span>
+              <span class="tag">3D Modeling</span>
+              <span class="tag">Web Development</span>
+            </div>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3>Soft Skills</h3>
+            <div class="tags">
+              <span class="tag">Cross-functional collaboration</span>
+              <span class="tag">Mentorship</span>
+              <span class="tag">Written communication</span>
+              <span class="tag">Problem-solving</span>
+              <span class="tag">Spoken communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. EXPERIENCE / PROJECTS =================== -->
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">03 — Selected work</p>
+          <h2 id="work-heading">Projects</h2>
+        </div>
+          <article class="card reveal" style="--i:1">
+            <div class="card__meta">
+              <h3><!-- PLACEHOLDER: project name -->Web App</h3>
+              <span class="card__date">2026</span>
+            </div>
+            <p class="card__org">Personal project</p>
+            <ul class="card__desc" role="list">
+              <li><!-- PLACEHOLDER --> Built a website for a local business.</li>
+              <li>With a modern design and responsive layout.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="card__links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. CONTACT =================== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">04 — Get in touch</p>
+          <h2 id="contact-heading">Contact</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="reveal">
+            <p>
+              <!-- PLACEHOLDER: availability note -->
+              I'm currently open to new opportunities and collaborations. 
+              If you'd like to discuss a project, potential partnership, 
+              or just want to say hello, feel free to reach out!
+            </p>
+            <p class="mt-lg">
+              <a href="mailto:ganesh180208@gmail.com" style="color:var(--color-accent); font-weight:600;">
+                <!-- PLACEHOLDER: email -->ganesh180208@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <!-- Front-end only contact form — no backend wired up. Connect to a
+               form service (e.g. Formspree, Netlify Forms) or your own API
+               before relying on this in production. -->
+          <form class="reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+              <small class="error" data-error-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <small class="error" data-error-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <p class="visually-hidden" role="status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. SOCIAL LINKS =================== -->
+    <section class="section" style="padding-block: var(--space-2xl);" aria-labelledby="social-heading">
+      <div class="container">
+        <h2 id="social-heading" class="visually-hidden">Social and professional links</h2>
+        <div class="social-links reveal">
+          <a href="https://www.linkedin.com/in/ganesh-b-c-926bb8406/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ganesh18-lgtm" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.64 1.6.24 2.77.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55C20.21 21.4 23.5 17.1 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://x.com/example" target="_blank" rel="noopener noreferrer" aria-label="X profile (opens in new tab)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.6l-5.2-6.8L5.7 22H2.4l7.7-8.8L1 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20z"/></svg>
+            X / Twitter
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 7. FOOTER =================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p style="color: var(--color-text-muted); font-size: var(--step--1);">
+        © <span id="year"></span> <!-- PLACEHOLDER: name -->Ganesh B C. All rights reserved.
+      </p>
+      <nav aria-label="Footer">
+        <a class="back-to-top" href="#hero">↑ Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="certificate-modal" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="certificateTitle" hidden>
+    <div class="certificate-modal__backdrop" data-cert-modal-close></div>
+    <div class="certificate-modal__panel">
+      <div class="certificate-modal__header">
+        <h3 id="certificateTitle">Generative AI Certificate</h3>
+        <button class="certificate-modal__close" type="button" data-cert-modal-close aria-label="Close certificate preview">×</button>
+      </div>
+      <img class="certificate-modal__image" src="assets/Gen Ai.png" alt="Certificate preview for the Generative AI course">
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
